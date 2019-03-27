@@ -238,12 +238,14 @@ var tocToTop = getDistanceOfLeft(toc).top;
 
 function reHeightToc(){
     if(toc) { // resize toc height
-        toc.style.height = ( document.documentElement.clientHeight - 10 ) + 'px';
-        toc.style.overflowY = 'scroll';
+//        toc.style.height = ( document.documentElement.clientHeight - 10 ) + 'px';
+    	toc.style.height = '300px';
+//        toc.style.overflowY = 'scroll';
+    	toc.style.overflow = 'auto';
     }
 }
 
-//reHeightToc();
+reHeightToc();
 
 if(window.isPost){
     var result = []
