@@ -6,6 +6,22 @@ tags:
 - nodejs
 ---
 
+### NPM配置国内源
+
+```shell
+# 设置淘宝源
+npm config set registry https://registry.npm.taobao.org 
+npm info underscore （如果上面配置正确这个命令会有字符串response）
+
+# 出现错误：
+npm info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+
+# 这是因为ssl验证问题，我们取消ssl验证:
+npm config set strict-ssl false
+```
+
+
+
 在我们创建 Node.js 第一个 "Hello, World!" 应用前，让我们先了解下 Node.js 应用是由哪几部分组成的：
 
 1. **引入 required 模块**：我们可以使用 **require** 指令来载入 Node.js 模块。
