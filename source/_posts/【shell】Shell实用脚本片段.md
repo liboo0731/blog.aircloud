@@ -254,5 +254,75 @@ firewall-cmd --load-zone-defaults=drop --permanent
 firewall-cmd --permanent --zone=drop --add-port=22/tcp
 firewall-cmd --reload
 
+#keepalived配置规则开放
+firewall-cmd --direct --permanent --add-rule ipv4 filter INPUT 0 --in-interface ens33 --destination 224.0.0.18 --protocol vrrp -j ACCEPT
+```
+
+### 自动交互
+
+```shell
+[root@localhost ~]# echo -e '123456\n123456'|passwd tom
+Changing password for user tom.
+New password: BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: passwd: all authentication tokens updated successfully.
+[root@localhost ~]# echo 123456|passwd --stdin tom
+Changing password for user tom.
+passwd: all authentication tokens updated successfully.
+[root@localhost ~]# passwd tom <<EOF
+123456
+123456
+EOF
+Changing password for user tom.
+New password: BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: passwd: all authentication tokens updated successfully.
+[root@localhost ~]#
+```
+
+### 模板写入
+
+```shell
+#!/bin/sh
+
+a=1
+b=2
+
+cat > t1.txt <<EOF
+a=$a
+b=$b
+EOF
+
+cat <<EOF > t2.txt
+a=$a
+b=$b
+EOF
+
+```
+
+### Sed常用操作
+
+```shell
+#第一行前面添加（1i）
+sed -i '1istr' file
+#第一行后面添加（1a）
+sed -i '1astr' file
+#替换第一行（1c）
+sed -i '1cstr' file
+#删除第一行（1d）
+sed -i '1d' file
+#末尾追加（$a）
+sed -i '$astr' file
+#匹配替换开头是a的字符为str
+sed -i 's/^a/str/' file
+#匹配全局替换
+sed -i 's/^a/str/g' file
+#匹配行前面添加（1i）
+sed -i '/^a/istr' file
+#匹配行后面添加（1a）
+sed -i '/^a/astr' file
+#替换匹配行（1c）
+sed -i '/^a/cstr' file
+#删除匹配行（1d）
+sed -i '/^a/d' file
+
 ```
 
