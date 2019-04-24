@@ -254,6 +254,11 @@ firewall-cmd --load-zone-defaults=drop --permanent
 firewall-cmd --permanent --zone=drop --add-port=22/tcp
 firewall-cmd --reload
 
+#firewall-offline-cmd is an offline command line client of the firewalld daemon. It should be used only if the firewalld service is not running. For example to migrate from system-config-firewall/lokkit or in the install environment to configure firewall settings with kickstart.
+firewall-offline-cmd --set-default-zone=drop
+firewall-offline-cmd --load-zone-defaults=drop
+firewall-offline-cmd --add-port=22/tcp
+
 #keepalived配置规则开放
 firewall-cmd --direct --permanent --add-rule ipv4 filter INPUT 0 --in-interface ens33 --destination 224.0.0.18 --protocol vrrp -j ACCEPT
 ```
