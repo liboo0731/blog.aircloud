@@ -254,6 +254,40 @@ setfacl -x u:admin file
 setfacl -b fodler/
 ```
 
+### 向上递归设置ACL
+
+```shell
+#脚本必须位于用户HOME目录下
+#!/bin/bash
+
+if [ $UID -eq 0 ]; then
+        echo "禁止以root帐号运行此脚本"
+        exit 1
+fi
+
+CURRENTPATH=$(dirname $(readlink -f $0))
+
+if ! id activemq &>/dev/null; then
+	sudo useradd -r -s /bin/false activemq
+	UPPERPATH=$CURRENTPATH
+	while true
+	do
+		if [ "$HOME" == "$UPPERPATH" ]; then
+			break
+		fi
+		UPPERPATH=$(dirname $UPPERPATH)
+		setfacl -m u:admin:rwx $UPPERPATH
+		setfacl -d -m u:admin:rwx $UPPERPATH
+		setfacl -m u:activemq:rwx $UPPERPATH
+		setfacl -d -m u:activemq:rwx $UPPERPATH
+	done
+	setfacl -R -m u:admin:rwx $CURRENTPATH
+	setfacl -dR -m u:admin:rwx $CURRENTPATH
+	setfacl -R -m u:activemq:rwx $CURRENTPATH
+	setfacl -dR -m u:activemq:rwx $CURRENTPATH
+fi
+```
+
 ### 防火墙常用设置
 
 ```shell
