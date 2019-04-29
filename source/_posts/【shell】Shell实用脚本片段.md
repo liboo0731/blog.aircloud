@@ -371,6 +371,13 @@ sed -i '/^a/astr' file
 sed -i '/^a/cstr' file
 #删除匹配行（1d）
 sed -i '/^a/d' file
-
+#删除文件中行首的空格
+sed -i 's/^[ \t]*//' result.data 
+#删除文件中行末空格：
+sed -i 's/[ \t]*$//g' result.data
+#删除文件中所有的空格：
+sed -i s/[[:space:]]//g result.data
+#把文件中空格变为‘，’：
+sed -i 's/[ \t]/,/g' result.data
 ```
 

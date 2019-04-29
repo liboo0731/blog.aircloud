@@ -62,6 +62,10 @@ tags:
 
 [Git使用详细教程 - seven-ahz - 博客园](https://www.cnblogs.com/seven-ahz/p/7712125.html)
 
+### Jenkins
+
+[Jenkins](https://jenkins.io/)
+
 ### keepalived
 
 ### Kickstart
