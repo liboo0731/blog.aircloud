@@ -2,7 +2,7 @@
 title: 【Linux】LVM使用及扩展
 date: 2018-11-10 21:11:12
 tags: 
-
+- linux
 - lvm
 ---
 

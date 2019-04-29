@@ -2,6 +2,7 @@
 title: 【tools】使用Hexo和AirCloud主题在GitHub上构建Blog
 date: 2018-10-24 14:51:39
 tags: 
+    - tools
     - hexo
     - aircloud
     - github

@@ -1,7 +1,8 @@
 ---
 title: 【web】实现表格表头固定内容滚动效果
 date: 2018-10-25 08:56:12
-tags: 
+tags:
+    - web 
     - html
     - css
 ---

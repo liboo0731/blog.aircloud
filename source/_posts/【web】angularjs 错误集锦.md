@@ -2,6 +2,7 @@
 title: 【web】AngularJs错误集锦
 date: 2018-08-29 15:23:22
 tags: 
+    - web
     - angularjs
 ---
 

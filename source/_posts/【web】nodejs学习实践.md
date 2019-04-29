@@ -2,8 +2,8 @@
 title: 【web】nodejs学习实践
 date: 2018-11-12 21:21:12
 tags: 
-
-- nodejs
+    - web
+    - nodejs
 ---
 
 ### NPM配置国内源

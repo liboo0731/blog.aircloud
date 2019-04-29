@@ -2,6 +2,7 @@
 title: 【web】angularjs项目学习笔记
 date: 2018-10-26 11:16:28
 tags: 
+    - web
     - angularjs
 ---
 

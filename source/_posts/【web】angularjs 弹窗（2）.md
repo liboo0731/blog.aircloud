@@ -2,6 +2,7 @@
 title: 【web】AngularJs的UI组件ui-bootstrap —— Model
 date: 2018-09-28 16:21:23
 tags: 
+    - web
     - angularjs
     - ui-bootstrap
     - ocLazyLoad

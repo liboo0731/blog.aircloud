@@ -2,7 +2,7 @@
 title: 【tools】vi/vim基本使用方法
 date: 2018-12-10 21:11:12
 tags: 
-
+- tools
 - vi
 - vim
 ---

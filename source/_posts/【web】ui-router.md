@@ -2,6 +2,7 @@
 title: 【web】ui-router学习笔记
 date: 2018-10-21 10:11:33
 tags: 
+    - web
     - ui-router
 ---
 

@@ -2,7 +2,8 @@
 title: 【tools】优质资源集合
 date: 2019-04-17 21:11:12
 tags: 
-    - 资源
+- tools
+- 资源
 ---
 
 ### Ansible

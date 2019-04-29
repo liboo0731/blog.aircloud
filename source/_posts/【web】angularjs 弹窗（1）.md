@@ -2,6 +2,7 @@
 title: 【web】angularjs弹窗（ui-bootstrap+directive+ocLazyLoad）
 date: 2018-08-16 19:46:32
 tags: 
+    - web
     - angularjs
     - ui-bootstrap
     - ocLazyLoad
