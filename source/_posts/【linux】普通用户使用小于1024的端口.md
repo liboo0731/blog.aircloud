@@ -15,6 +15,8 @@ tags:
 
 ```shell
 setcap 'cap_net_bind_service=+ep' /path/to/program 
+
+sudo setcap 'cap_net_bind_service=+ep' $(readlink -f $(which node))
 ```
 
 #### 取消特权
