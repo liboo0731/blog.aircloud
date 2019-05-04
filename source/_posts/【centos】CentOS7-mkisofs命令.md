@@ -1,6 +1,6 @@
 ---
 title: 【centos】CentOS7-mkisofs命令
-date: 2019-04-29 21:23:25
+date: 2018-06-09 21:23:25
 tags:
 - centos
 - centos7

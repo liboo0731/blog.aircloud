@@ -1,6 +1,6 @@
 ---
 title: 【centos】YUM源创建及使用
-date: 2019-04-29 21:30:05
+date: 2017-08-08 21:30:05
 tags:
 - centos
 - yum

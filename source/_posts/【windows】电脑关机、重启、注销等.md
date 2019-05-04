@@ -1,6 +1,6 @@
 ---
 title: 【windows】电脑关机、重启、注销等
-date: 2019-04-29 20:44:12
+date: 2017-10-17 20:44:12
 tags:
 - windows
 - cmd

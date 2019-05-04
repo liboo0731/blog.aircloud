@@ -1,6 +1,6 @@
 ---
 title: 【centos】CentOS7-U盘安装
-date: 2019-04-29 21:10:09
+date: 2018-01-19 21:10:09
 tags:
 - centos
 - centos7

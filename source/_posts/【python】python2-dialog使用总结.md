@@ -1,6 +1,6 @@
 ---
 title: 【python】python2-dialog模块使用总结
-date: 2019-3-18 15:11:42
+date: 2019-03-18 15:11:42
 tags: 
 
 - python

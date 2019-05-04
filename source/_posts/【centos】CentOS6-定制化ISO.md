@@ -1,6 +1,6 @@
 ---
 title: 【centos】CentOS6-定制化ISO
-date: 2019-04-29 20:49:40
+date: 2017-05-22 20:49:40
 tags:
 - centos
 - centos6

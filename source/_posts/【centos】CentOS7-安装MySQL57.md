@@ -1,6 +1,6 @@
 ---
 title: 【centos】CentOS7-安装MySQL5.7
-date: 2019-04-29 21:14:19
+date: 2018-03-21 21:14:19
 tags:
 - centos
 - centos7

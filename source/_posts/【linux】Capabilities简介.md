@@ -1,6 +1,6 @@
 ---
 title: 【linux】Capabilities简介
-date: 2019-04-29 14:20:11
+date: 2018-09-29 14:20:11
 tags:
 - linux
 ---

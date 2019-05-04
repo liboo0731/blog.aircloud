@@ -1,6 +1,6 @@
 ---
 title: 【centos】CentOS免密登录
-date: 2019-04-29 20:48:51
+date: 2018-06-12 20:48:51
 tags:
 - centos
 ---

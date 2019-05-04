@@ -1,6 +1,6 @@
 ---
 title: 【shell】Shell基础巩固（1）
-date: 2019-04-01 21:41:22
+date: 2018-08-01 21:41:22
 tags: 
     - shell
 ---
