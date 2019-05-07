@@ -51,6 +51,7 @@ docker pull centos:7.4.1708		#下载特定版本镜像
 docker run hello-world /hello	#启动并执行命令
 docker run -it centos:7.4.1708 /bin/bash	#交互模式启动镜像
 docker run -d centos:7.4.1708 /bin/bash	#后台启动镜像
+docker run -itd centos:7.4.1708 /bin/bash
 #罗列容器
 docker ps	#罗列启动的容器
 docker ps -a	#罗列所有容器
@@ -74,7 +75,9 @@ docker export -o centos.7.4.1708.tar e771603453ab
 docker import centos.7.4.1708.tar centos:7.4.1708
 #删除镜像/容器
 docker rm e771603453ab
+for i in `docker ps -a|awk '{print $1}'|grep -v CONTAINER`;do docker rm $i;done
 docker rmi e771603453ab
+for i in `docker images -a|awk '{print $3}'|grep -v IMAGE`;do docker rmi $i;done
 
 ```
 
