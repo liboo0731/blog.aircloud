@@ -67,9 +67,46 @@ for i in range(10):
 cprint("Attention!", 'red', attrs=['bold'], file=sys.stderr)
 ```
 
+#### 简单方法
+
+```python
+#!/usr/bin/env python
+
+from termcolor import colored, cprint
+
+#灰
+print_grey = lambda x: cprint(x, 'grey')
+print_grey('Hello, World!')
+#红
+print_red = lambda x: cprint(x, 'red')
+print_red('Hello, World!')
+#绿
+print_green = lambda x: cprint(x, 'green')
+print_green('Hello, World!')
+#黄
+print_yellow = lambda x: cprint(x, 'yellow')
+print_yellow('Hello, World!')
+#蓝
+print_blue = lambda x: cprint(x, 'blue')
+print_blue('Hello, World!')
+#紫
+print_magenta = lambda x: cprint(x, 'magenta')
+print_magenta('Hello, World!')
+#青蓝
+print_cyan = lambda x: cprint(x, 'cyan')
+print_cyan('Hello, World!')
+#白
+print_white = lambda x: cprint(x, 'white')
+print_white('Hello, World!')
+```
 
 
-*参考：[python库termcolor用法](https://www.cnblogs.com/everfight/p/python_termcolor.html)*
+
+*参考：*
+
+*[python库termcolor用法](https://www.cnblogs.com/everfight/p/python_termcolor.html)*
+
+*[termcolor 1.1.0](https://pypi.org/project/termcolor/)*
 
 
 
