@@ -87,6 +87,57 @@ Multiple API’s provide integration with in-house / third-party applications, a
 
 
 
+## Favorite Nagios Projects
+### NCPA
+
+NCPA is a cross-platform monitoring agent that runs on Windows, Linux/Unix, and Mac OS/X machines. Its features include both active and passive checks, remote management, and a local monitoring interface.
+
+### DNX
+
+DNX is a modular extension of Nagios that offloads a significant portion of the work normally done by Nagios to a distributed network of remote hosts. The DNX module ensures that work is distributed fairly and evenly among the registered DNX client hosts.
+
+### NRPE
+
+NRPE allows you to remotely execute Nagios plugins on other Linux/Unix machines. This allows you to monitor remote machine metrics (disk usage, CPU load, etc.). NRPE can also communicate with Windows agent addons like NSClient++, so you can check metrics on remote Windows machines as well.
+
+### NRDP
+
+NRDP is a flexible data transport mechanism and processor for Nagios. It is designed with a simple and powerful architecture that allows for it to be easily extended and customized to fit individual users’ needs. It uses standard ports protocols (HTTP(S) and XML) and can be implemented as a replacement for NSCA.
+
+### NSCA
+
+NSCA allows you to integrate passive alerts and checks from remote machines and applications with Nagios. Useful for processing security alerts, as well as deploying redundant and distributed Nagios setups.
+
+### NSClient++
+
+NSClient++ is a monitoring agent/daemon for Microsoft Windows systems that works with Nagios. Make monitoring Windows machines easy.
+
+### Nagiosgraph
+
+Nagiosgraph is graphing tool that parses output and performance data from Nagios plugins and stores the data in RRD files. nagiosgraph displays data in Nagios trends, as popups for hosts and services, or in separate reports. Easy to set up and eminently customizable.
+
+### NSTI
+
+NSTI is a Nagios addon that makes managing SNMP traps easier. NSTI provide a PHP frontend for the SNMPTT database backend and allows you to filter SNMP results quickly and effectively to get a comprehensive overview of the information you want to see.
+
+### NConf
+
+NConf is a PHP frontend for configuring Nagios. It differs from other tools by offering enterprise-class features like templates, dependencies and the ability to configure a large-scale, distributed Nagios server topology.
+
+### NDOUtils
+
+NDOUtils allows you to export current and historical data from one or more Nagios instances to a MySQL database. Several community addons use this as one of their data sources. NDOUtils consists of a standalone daemon, a Nagios event broker, and several helper utilities.
+
+### BPI
+
+Nagios Business Process Intelligence (BPI) is an advanced grouping tool that allows you to set more complex dependencies to determine groups states. Nagios BPI provides an interface to effectively view the ‘real’ state of the network. Rules for group states can be determined by the user, and parent-child relationships are easily identified when you need to ‘drill down’ on a problem. This tool can also be used in conjunction with a check plugin to allow for notifications through Nagios.
+
+### NagVis
+
+Nagvis is a visualization addon for Nagios. It can be used to visualize Nagios data, e.g. to display IT processes like a mail system or a network infrastructur
+
+
+
 ## CentOS Easy Setup
 
 ### Reference
@@ -441,6 +492,8 @@ make install
 #Service / Daemon Commands
 systemctl restart nagios.service
 systemctl status nagios.service
+systemctl restart httpd.service
+systemctl status httpd.service
 
 ```
 
