@@ -1,5 +1,5 @@
 ---
-title: 【shell】Shell常用脚本片段
+title: 【shell】Shell常用脚本集合（2）
 date: 2019-03-19 09:14:25
 tags: 
     - shell

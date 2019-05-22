@@ -72,7 +72,7 @@ define host {
         use                     linux-server 
         host_name               host123
         alias                   Host 123
-        address                 192.168.32.163
+        address                 192.168.23.123
 }     
 define hostgroup {      
         hostgroup_name          host123-servers

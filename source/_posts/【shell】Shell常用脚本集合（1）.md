@@ -1,11 +1,23 @@
 ---
-title: 【Linux】Linux操作命令整理
+title: 【shell】Shell常用脚本集合（1）
 date: 2018-10-16 19:41:32
 tags: 
-    - linux	
+    - shell	
 ---
 
-##### 删除文件/文件夹
+#### 复制文件
+
+```shell
+cp create.sql.gz{,.bak}
+```
+
+#### 查看配置文件
+
+```shell
+egrep -v "^#|^$" /usr/local/nagios/etc/nrpe.cfg
+```
+
+#### 删除文件/文件夹
 
 ```shell
 #删除多个文件夹
@@ -17,7 +29,7 @@ find iso/ -name boot.cat | xargs rm
 find iso/ -name TRANS.TBL -exec rm {} \;
 ```
 
-##### 查看文件/文件夹个数
+#### 查看文件/文件夹个数
 
 ```shell
 #当前目录文件个数
@@ -31,7 +43,7 @@ ls -lR | grep "^-" | wc -l
 ls -lR | grep "^d" | wc -l 
 ```
 
-##### 解压/压缩
+#### 解压/压缩
 
 ```shell
 #软件数据包解压
@@ -40,21 +52,21 @@ tar xzvf infoShare-web-3.0.4.tar.gz
 tar zcvf infoShare-web-3.0.4.tar.gz infoShare-web-3.0.4/
 ```
 
-##### 获取本地IP地址
+#### 获取本地IP地址
 
 ```shell
 ipaddr='172.0.0.1'
 ipaddr=$(ip addr | awk '/^[0-9]+: / {}; /inet.*global/ {print gensub(/(.*)\/(.*)/, "\\1", "g", $2)}')
 ```
 
-##### RPM定制打包
+#### RPM定制打包
 
 ```shell
 #RPM包生成
 rpmbuild -ba infoShare-web.spec
 ```
 
-##### ISO定制打包
+#### ISO定制打包
 
 ```shell
 #ISO定制化文件解包
