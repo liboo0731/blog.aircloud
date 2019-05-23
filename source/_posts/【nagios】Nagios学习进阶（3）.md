@@ -5,23 +5,64 @@ tags:
 - nagios
 ---
 
+### Installing NRPE Using the Install Script
+
+You must run the following commands as root.
+
+```
+cd /tmp
+```
+
+For CentOS & RHEL 5-7, Fedora 14+, SLES & OpenSUSE 11+, Ubuntu 12+, Debian 6+:
+
+```
+wget http://assets.nagios.com/downloads/nagiosxi/agents/linux-nrpe-agent.tar.gz
+```
+
+Unpack the installer, and run the install script:
+
+```
+tar xzf linux-nrpe-agent.tar.gz
+cd linux-nrpe-agent
+./fullinstall
+```
+
+The script takes care of the following setup:
+
+- Installs prerequisite packages
+- Creates required users and groups
+- Defines services for xinetd
+- Compiles and installs the NRPE agent and Nagios plugins
+- Configures the firewall (except on SLES)
+- Configures the agent
+
+The script will stop to prompt you once to ask for the IP address(es) for your monitoring server(s).
+
+You will need to type either a single address or multiple addresses separated by spaces. This will configure the xinetd superdaemon to allow connections from those addresses to the NRPE agent.
+
+You now have NRPE installed. You may remove any installation files in the tmp directory.
+
+ 
+
 ### Nagios监控Linux主机内部信息
 
 1. 监控端安装软件
 
 ```
-#nagioscore
+# nagioscore
 wget -O nagioscore.tar.gz https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.3.tar.gz
-#nagios-plugins
+
+# nagios-plugins
 wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz
-#nrpe（需要check_nrpe 插件）
+
+# nrpe（需要check_nrpe 插件）
 wget http://assets.nagios.com/downloads/nagiosxi/agents/linux-nrpe-agent.tar.gz
 ```
 
 2. 被监控端安装软件
 
 ```
-#nrpe
+# nrpe
 wget http://assets.nagios.com/downloads/nagiosxi/agents/linux-nrpe-agent.tar.gz
 ```
 
