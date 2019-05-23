@@ -15,6 +15,8 @@ cp create.sql.gz{,.bak}
 
 ```shell
 egrep -v "^#|^$" /usr/local/nagios/etc/nrpe.cfg
+cat /usr/local/nagios/etc/nrpe.cfg |grep -v ^# |grep -v ^$
+grep -n '^'[a-z] /etc/zabbix/zabbix_server.conf
 ```
 
 #### 删除文件/文件夹
