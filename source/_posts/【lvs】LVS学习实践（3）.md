@@ -7,8 +7,6 @@ tags:
 
 ## 使用keepalived 实现LVS 的高可用
 
-## LVS 使用DR 模式
-
 #### 服务器IP 信息
 
 ```
