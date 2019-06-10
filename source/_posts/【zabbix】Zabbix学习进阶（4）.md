@@ -1,6 +1,6 @@
 ---
 title: 【zabbix】Zabbix学习进阶（4）
-date: 2019-05-30 16:29:34
+date: 2019-05-29 16:29:34
 tags:
 - zabbix
 ---
