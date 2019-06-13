@@ -1,5 +1,5 @@
 ---
-title: 【docker】Docker菜鸟进阶（1）
+title: 【docker】Docker安装及基本命令使用
 date: 2019-05-07 18:35:54
 tags:
 - docker
@@ -76,8 +76,10 @@ docker import centos.7.4.1708.tar centos:7.4.1708
 #删除镜像/容器
 docker rm e771603453ab
 for i in `docker ps -a|awk '{print $1}'|grep -v CONTAINER`;do docker rm $i;done
+
 docker rmi e771603453ab
 for i in `docker images -a|awk '{print $3}'|grep -v IMAGE`;do docker rmi $i;done
 
+docker kill $(docker ps -q) ; docker rm $(docker ps -a -q) ; docker rmi $(docker images -q -a)
 ```
 

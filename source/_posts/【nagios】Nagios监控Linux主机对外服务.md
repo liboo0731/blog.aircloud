@@ -1,5 +1,5 @@
 ---
-title: 【nagios】Nagios学习进阶（2）
+title: 【nagios】Nagios监控Linux主机对外服务
 date: 2019-05-21 14:49:51
 tags:
 - nagios

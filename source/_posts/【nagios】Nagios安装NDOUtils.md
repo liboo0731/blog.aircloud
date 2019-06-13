@@ -1,5 +1,5 @@
 ---
-title: 【nagios】Nagios学习进阶（4）
+title: 【nagios】Nagios安装NDOUtils
 date: 2019-05-23 09:47:50
 tags:
 - nagios

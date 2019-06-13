@@ -5,6 +5,48 @@ tags:
     - shell
 ---
 
+### 批量修改文件后缀名
+
+```shell
+#!/bin/bash
+
+read -p "old extension:" oldext
+read -p "new extension:" newext
+read -p "The directory:" dir
+cd $dir
+
+for file in $(ls $dir | grep .$oldext)
+        do
+        name=$(ls $file | cut -d. -f1)
+        mv $file ${name}.$newext
+        echo "$name.$oldext ====> $name.$newext"
+        done
+echo "all files has been modified."
+```
+
+```shell
+#!/bin/sh
+ 
+echo "input what suffix will be replaced :"
+read SUFFIX_SRC
+echo "input what suffix of file to rename to:"
+read SUFFIX_DST
+ 
+for i in *.$SUFFIX_SRC
+do
+    if [ -e $i ]; then
+        #echo "mv $i to ${i%.*}.$SUFFIX_DST"
+        #mv $i ${i%.*}.$SUFFIX_DST
+        echo "mv $i to `basename $i .$SUFFIX_SRC`.$SUFFIX_DST"
+        mv $i `basename $i .$SUFFIX_SRC`.$SUFFIX_DST
+    else
+        echo "file does not exist."
+        exit -1
+    fi
+done
+echo "all files has been modified."
+```
+
 ### 禁止使用root账号运行
 
 ```shell

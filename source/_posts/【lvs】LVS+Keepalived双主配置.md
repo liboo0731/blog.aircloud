@@ -1,5 +1,5 @@
 ---
-title: 【lvs】LVS学习实践（5）
+title: 【lvs】LVS+Keepalived双主配置
 date: 2019-04-27 08:58:27
 tags:
 - lvs

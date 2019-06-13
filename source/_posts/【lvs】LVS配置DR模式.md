@@ -1,5 +1,5 @@
 ---
-title: 【lvs】LVS学习实践（2）
+title: 【lvs】LVS配置DR模式
 date: 2019-04-24 10:13:06
 tags:
 - lvs

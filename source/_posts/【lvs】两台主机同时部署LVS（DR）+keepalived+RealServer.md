@@ -1,11 +1,11 @@
 ---
-title: 【lvs】LVS学习实践（4）
+title: 【lvs】两台主机同时部署LVS（DR）+keepalived+RealServer
 date: 2019-04-26 13:27:41
 tags:
 - lvs
 ---
 
-## 两台主机同时部署LVS+keepalived+RealServer
+## 两台主机同时部署LVS（DR）+keepalived+RealServer
 
 ### 问题原因
 
