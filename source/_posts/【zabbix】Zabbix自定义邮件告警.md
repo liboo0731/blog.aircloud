@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（3）
+title: 【zabbix】Zabbix自定义邮件告警
 date: 2019-05-29 15:53:16
 tags:
 - zabbix

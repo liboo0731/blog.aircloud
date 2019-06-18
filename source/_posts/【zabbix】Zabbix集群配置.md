@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（2）
+title: 【zabbix】Zabbix集群配置
 date: 2019-05-28 17:31:33
 tags:
 - zabbix

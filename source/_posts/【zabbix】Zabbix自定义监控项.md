@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（5）
+title: 【zabbix】Zabbix自定义监控项
 date: 2019-05-29 17:25:31
 tags:
 - zabbix

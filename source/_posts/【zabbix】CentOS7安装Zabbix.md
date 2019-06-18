@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（1）
+title: 【zabbix】CentOS7安装Zabbix
 date: 2019-05-27 13:32:44
 tags:
 - zabbix

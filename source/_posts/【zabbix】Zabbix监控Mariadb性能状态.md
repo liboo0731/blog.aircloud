@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（4）
+title: 【zabbix】Zabbix监控Mariadb性能状态
 date: 2019-05-29 16:29:34
 tags:
 - zabbix

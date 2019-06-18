@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（6）
+title: 【zabbix】Zabbix配置SNMP监控
 date: 2019-05-30 13:18:46
 tags:
 - zabbix

@@ -1,5 +1,5 @@
 ---
-title: 【zabbix】Zabbix学习进阶（7）
+title: 【zabbix】Zabbix使用JMX监控ActiveMQ
 date: 2019-05-30 16:41:05
 tags:
 - zabbix
