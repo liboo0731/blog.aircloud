@@ -728,6 +728,7 @@ body {
 }
 .index-container .index-left {
   width: 240px;
+  margin-right: 30px;
 }
 .index-container .index-middle {
   max-width: 784px;
